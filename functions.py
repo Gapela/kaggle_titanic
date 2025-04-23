@@ -1,8 +1,14 @@
 # LIBS
 import pandas as pd
 import sklearn as sk
+import configparser
 
-def data_import():
+def config_parser():
+    config = configparser.ConfigParser()
+    config.read('.config')
+    return config
+
+def data_import(path):
     pass
 
 def data_normalize():
